@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Woo | Bringing Excitement to Relationships</title>
+    <link rel="icon" href="/img/mylogo_fav.png">
+<!-- Open Graph data -->
+<!--
+<meta property="fb:admins" content="Facebook numeric ID" />
+-->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Grow the Excitement in Your Relationship">
+<meta property="og:url" content="&#x2F;&#x2F;woo.com&#x2F;">
+<meta property="og:site_name" content="WOO">
+<meta property="og:locale" content="en">
+<meta property="og:description" content="Grow the Excitement in Your Relationship">
+<meta property="og:video" content="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;GtRGUXippj0">
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Grow the Excitement in Your Relationship">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getwoo">
+<meta name="twitter:title" content="Grow the Excitement in Your Relationship">
+<meta name="twitter:description" content="Grow the Excitement in Your Relationship.">
+<!-- Twitter Summary card images must be at least 120x120px -->
+    <!--<base href="//woo.com/">-->
+    <meta name="description" content="Grow the Excitement in Your Relationship">
+    <meta name="apple-itunes-app" content="">
+    <!-- <base href="//woo.com/"> -->
+
+    <link href="css/creative.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+<!-- Page hiding snippet (recommended) -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-MS5CN94':true});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MS5CN94');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+(function(b, r, a, n, c, h, _, s, d, k) {
+    if (!b[n] || !b[n]._q) {
+        for (; s < _.length;) c(h, _[s++]);
+        d = r.createElement(a);
+        d.async = 1;
+        d.src = "https://cdn.branch.io/branch-latest.min.js";
+        k = r.getElementsByTagName(a)[0];
+        k.parentNode.insertBefore(d, k);
+        b[n] = h
+    }
+})(window, document, "script", "branch", function(b, r) {
+        b[r] = function() {
+            b._q.push([r, arguments])
+        }
+    }, {
+        _q: [],
+        _v: 1
+    },
+    "addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent"
+    .split(" "), 0);
+
+function getMatchIDFromUrl(hashBased) {
+    var query;
+    if (hashBased) {
+        var pos = location.href.indexOf("?");
+        if (pos == -1) return [];
+        query = location.href.substr(pos + 1);
+    } else {
+        query = location.search.substr(1);
+    }
+    var result = {};
+    query.split("&").forEach(function(part) {
+        if (!part) return;
+        part = part.split("+").join(" "); // replace every + with space, regexp-free version
+        var eq = part.indexOf("=");
+        var key = eq > -1 ? part.substr(0, eq) : part;
+        var val = eq > -1 ? decodeURIComponent(part.substr(eq + 1)) : "";
+        var from = key.indexOf("[");
+        if (from == -1) result[decodeURIComponent(key)] = val;
+        else {
+            var to = key.indexOf("]", from);
+            var index = decodeURIComponent(key.substring(from + 1, to));
+            key = decodeURIComponent(key.substring(0, from));
+            if (!result[key]) result[key] = [];
+            if (!index) result[key].push(val);
+            else result[key][index] = val;
+        }
+    });
+    if (result['_branch_match_id']) {
+        return result['_branch_match_id'];
+    } else {
+        return false;
+    }
+}
+</script>  </head>
+    
+    <body id="page-top">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS5CN94"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+<!-- End Google Tag Manager (noscript) -->
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a id="nav-logo" class="navbar-brand js-scroll-trigger text-hide mt-3 mb-1" href=""></a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-family:'Poppins'; font-weight: 400;" href="#intro" >Intro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-family:'Poppins'; font-weight: 400"href="#problem" >Problem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-family:'Poppins'; font-weight: 400"href="#solution" >Solution</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-family:'Poppins'; font-weight: 400"href="#features" >Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-family:'Poppins'; font-weight: 400"href="/donate-spare-change" >About Us</a>
+            </li>
+           
+            <li class="nav-item" style="padding-left: 18px; padding-top: 12px">
+              <a href="https://www.facebook.com/" class="nav-btn" target="_blank">Download Beta </a>
+            </li>
+    
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div id="intro" class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-5 mb-2 pt-0 pt-lg-5 head-section-text">
+            <div class="my-4 px-2">
+              <h1 class="py-2 my-3" style="font-family:'Poppins'; font-weight: 600; font-color: #fff">
+                Grow the <br>
+                <strong>
+                  Excitement
+                </strong>
+                in Your Relationship
+              </h1>
+              <p class="mb-4 mt-lg-4 mb-lg-5" style="font-family:'Karla'; font-weight: 400; color:#">
+                Everyday couples break up because they are unfulfilled. Don’t let this happen to you. Woo is here to make sure you and your partner get what you want out of your relationship.
+              </p>
+              
+              <div class="mt-lg-3">
+                <a href="#problems" class="btn get-started-link my-2 mb-4">How can we help?</a>
+                <span class="home-head-mobiles" style="color:#fff">
+                  Available on  <i class="fab fa-apple" style="padding-left: 5px; color:#30AEB8"></i> <i class="fab fa-android" style="padding-left: 2px; color:#5D58FC"> </i>
+                </span>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-sm-12 col-md-7 mb-4">
+            <div class="home-head-col-img pt-sm-5 pt-lg-0">
+              <img class="d-none d-xl-block" src="img/head_video@2x.png" />
+              <img class="d-none d-md-block d-xl-none" src="img/head_video@2x.png" />
+              <img class="d-sm-block d-md-none pl-5" src="img/head_video@2x.png" />
+            </div>
+              <a href="https://www.youtube.com/watch?v=GtRGUXippj0" alt="Play" class="position-absolute head-play-button">
+                <img src="img/play_icon@2x.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<section id="problem" class="d-flex gray-background">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 mx-auto text-center">
+            <h2 id="problems" style="font-weight: 600">
+              What are we trying to solve?
+            </h2>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-10 col-md-6 col-lg-3 mx-auto mb-5">
+            <div class="card mb-3 box-shadow p-4 home-security-block">
+                <div class="mx-auto mb-5 mt-2 security-img">
+                  <img src="img/your_security_security.png" class="mx-auto mt-4 d-block align-self-center">
+                </div>
+                <h5 class="text-center mt-1 mb-4" style="color:#212121">Problem 1</h5>
+                <p class="pt-2" style="font-family:'karla';font-weight: 400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+            </div>          
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 mx-auto mb-5">
+            <div class="card mb-3 box-shadow p-4 home-security-block">
+                <div class="mx-auto mb-5 mt-2 security-img">
+                  <img src="img/your_security_record.png" class="mx-auto mt-4 d-block align-self-center">
+                </div>
+                <h5 class="text-center mt-1 mb-4" style="color:#212121">Problem 2</h5>
+                <p class="pt-2" style="font-family:'karla';font-weight: 400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>          
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 mx-auto mb-5">
+            <div class="card mb-3 box-shadow p-4 home-security-block">
+                <div class="mx-auto mb-5 mt-2 security-img">
+                  <img src="img/your_security_privacy.png" class="mx-auto mt-4 d-block align-self-center">
+                </div>
+                <h5 class="text-center mt-1 mb-4" style="color:#212121">Problem 3</h5>
+                <p class="pt-2" style="font-family:'karla';font-weight: 400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>          
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 mx-auto mb-5">
+            <div class="card mb-3 box-shadow p-4 home-security-block">
+                <div class="mx-auto mb-5 mt-2 security-img">
+                  <img src="img/your_security_security.png" class="mx-auto mt-4 d-block align-self-center">
+                </div>
+                <h5 class="text-center mt-1 mb-4" style="color:#212121">Problem 4</h5>
+                <p class="pt-2" style="font-family:'karla';font-weight: 400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" style=""  class="d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-md-12 mx-auto text-center mb-5">
+            <h2 style="font-weight: 600; color:#fff">
+              
+             The Woo solution
+            </h2>
+           </div>
+          </div>
+          <div class="row">
+          <div class=" col-10 col-sm-8 col-md-6 col-lg-4 mx-auto" id="home_steps_connect">
+            <div class="mb-4">
+              <div class="mx-auto mb-2 how-works-img">
+                <img src="img/how_it_works_connect.png" class="mx-auto d-block align-self-center" />
+              </div>
+              <div class="d-flex">
+                <p class="p-0 m-0 mr-3 steps-big-number">1</p>
+                <div class="d-flex flex-column mt-2 pt-2">
+                  <h5 class="pb-1" style="font-family:'Poppins'; font-weight: 700;color: #fff">Solution 1</h5>
+                  <p class="" style="font-family: 'karla'; font-weight: 400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-10 col-sm-8 col-md-6 col-lg-4 mx-auto" id="home_steps_spend">
+            <div class="mb-4">
+              <div class="mx-auto mb-2 how-works-img">
+                <img src="img/how_it_works_spend.png" class="mx-auto d-block align-self-center" />
+              </div>
+              <div class="d-flex">
+                <p class="p-0 m-0 mr-3 steps-big-number">2</p>
+                <div class="d-flex flex-column mt-2 pt-2">
+                  <h5 class="pb-1" style="font-family:'Poppins'; font-weight: 700; color: #fff">Solution 2</h5>
+                  <p class="" style="font-family: 'karla'; font-weight: 400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-10 col-sm-8 col-md-6 col-lg-4 mx-auto" id="home_steps_invest">
+            <div class="mb-4">
+              <div class="mx-auto mb-2 how-works-img">
+                <img src="img/how_it_works_connect.png" class="mx-auto d-block align-self-center" />
+              </div>
+              <div class="d-flex">
+                <p class="p-0 m-0 mr-3 steps-big-number">3</p>
+                <div class="d-flex flex-column mt-2 pt-2">
+                  <h5 class="pb-1" style="font-family:'Poppins'; font-weight: 700;color: #fff">Solution 3</h5>
+                  <p class="" style="font-family: 'karla'; font-weight: 400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="features" class="d-flex gray-background">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-md-12 text-center mx-auto mb-5">
+            <h2 style="font-weight: 600">
+              Our Features!
+            </h2>
+          </div>
+        </div>
+
+        <div class="row for-everyone-blocks">
+          <div class=" col-12 col-md-6 col-lg-6 col-xl-4 mx-xs-auto order-1">
+                <div class="media mx-xl-auto home-for-everyone-block mb-3 px-2 px-md-0 my-xl-5 hfeb-left-1 flex-row-reverse flex-xl-row hfeb-active" alt-img="img/final.svg">
+                    <div class="media-body my-xl-auto text-xl-right">
+                        <h5>Feature 1</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="pl-2 pr-3 pr-xl-0"></div>
+                    <div class="align-self-top align-self-xl-center icon-wrapper text-center align-self-top align-self-xl-center icon-wrapper text-center mx-xl-3">
+                    </div>
+                </div>
+                <div class="media mx-xl-auto home-for-everyone-block mb-3 px-2 px-md-0 my-xl-5 hfeb-left-2 flex-row-reverse flex-xl-row " alt-img="./img/home/affordable-phone/b-withdraw.png">
+                    <div class="media-body my-xl-auto text-xl-right">
+                        <h5>Feature 2</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="pl-2 pr-3 pr-xl-0"></div>
+                    <div class="align-self-top align-self-xl-center icon-wrapper text-center align-self-top align-self-xl-center icon-wrapper text-center mx-xl-3">
+                    </div>
+                </div>
+                <div class="media mx-xl-auto home-for-everyone-block mb-3 px-2 px-md-0 my-xl-5 hfeb-left-3 flex-row-reverse flex-xl-row " alt-img="./img/home/affordable-phone/c-goal.png">
+                    <div class="media-body my-xl-auto text-xl-right">
+                        <h5>Feature 3</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="pl-2 pr-3 pr-xl-0"></div>
+                    <div class="align-self-top align-self-xl-center icon-wrapper text-center align-self-top align-self-xl-center icon-wrapper text-center mx-xl-3">
+                    </div>
+                </div>
+          </div>
+          <div class=" col-12 col-md-6 col-lg-6 col-xl-4 mx-xs-auto order-12">
+                <div class="media mx-xl-auto home-for-everyone-block mb-3 px-2 px-md-0 my-xl-5 hfeb-right-1 flex-row-reverse " alt-img="/img/home/affordable-phone/d-one-dollar.png">
+                    <div class="media-body my-xl-auto ">
+                        <h5>Feature 4</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="pl-2 pr-3 pr-xl-0"></div>
+                    <div class="align-self-top align-self-xl-center icon-wrapper text-center align-self-top align-self-xl-center icon-wrapper text-center mx-xl-3">
+                    </div>
+                </div>
+                <div class="media mx-xl-auto home-for-everyone-block mb-3 px-2 px-md-0 my-xl-5 hfeb-right-2 flex-row-reverse " alt-img="/img/home/affordable-phone/e-portfolio.png">
+                    <div class="media-body my-xl-auto ">
+                        <h5>Feature 5</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="pl-2 pr-3 pr-xl-0"></div>
+                    <div class="align-self-top align-self-xl-center icon-wrapper text-center align-self-top align-self-xl-center icon-wrapper text-center mx-xl-3">
+                    </div>
+                </div>
+                <div class="media mx-xl-auto home-for-everyone-block mb-3 px-2 px-md-0 my-xl-5 hfeb-right-3 flex-row-reverse " alt-img="/img/home/affordable-phone/f-accellerate-savings.png">
+                    <div class="media-body my-xl-auto ">
+                        <h5>Feature 6</h5>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="pl-2 pr-3 pr-xl-0"></div>
+                    <div class="align-self-top align-self-xl-center icon-wrapper text-center align-self-top align-self-xl-center icon-wrapper text-center mx-xl-3">
+                    </div>
+                </div>
+          </div>
+          <div class="col-lg-4 mx-auto order-6 pl-2 d-none d-xl-block phone-img-background">
+            <div class="phone-img-content" style="background-image: url('./img/home/affordable-phone/a-goal.png');"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="d-flex">
+      <div class="container my-auto">
+        <div class="row">          
+          <div class="col-md-12 mx-auto text-center mt-4 mb-5">
+            <h2 style="font-weight: 600; color: #fff">
+              Easy to love
+            </h2>
+            <p class="px-3">We are still infants but have already started garnering tangible feedback. Below are a couple from the last few days after we shared our beta.</p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-10 col-md-6 col-lg-4 mx-auto mb-4">
+            <div class="card mb-4 p-4 box-shadow d-flex align-items-start flex-column h-100 review-block">
+              <div class="pb-2 review-text">
+                <h5 style="color:#212121">Brilliant!</h5>
+                <div class="review-stars">
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+              </div>
+              <div class="review-author media mt-auto">
+                <img src="img/stephen@2x.jpg" alt="Kate L." class="mr-3" />
+                <div class="media-body">
+                  <h5 style="color:#212121">Kate L.</h5>
+                  <p>Toronto</p>
+                </div>
+              </div>
+            </div>          
+          </div>
+          <div class="col-10 col-md-6 col-lg-4 mx-auto mb-4">
+            <div class="card mb-4 p-4 box-shadow d-flex align-items-start flex-column h-100 review-block">
+              <div class="pb-2 review-text">
+                <h5 style="color:#212121">Amazing Option for Saving</h6>
+                <div class="review-stars">
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+              </div>
+              <div class="review-author media mt-auto">
+                <img src="img/stephen@2x.jpg" alt="Steph G." class="mr-3" />
+                <div class="media-body">
+                  <h5 style="color:#212121">Steph G.</h6>
+                  <p>Calgary</p>
+                </div>
+              </div>
+            </div>          
+          </div>
+          <div class="col-10 col-md-6 col-lg-4 mx-auto mb-4">
+            <div class="card mb-4 p-4 box-shadow d-flex align-items-start flex-column h-100 review-block">
+              <div class="pb-2 review-text">
+                <h5 style="color:#212121">Great App, Amazing Support! </h6>
+                <div class="review-stars">
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                    <span class="p-2">&nbsp;</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="review-author media mt-auto">
+                <img src="img/stephen@2x.jpg" alt="Josh E." class="mr-3" />
+                <div class="media-body">
+                  <h5 style="color:#212121">Josh E.</h6>
+                  <p>Montreal</p>
+                </div>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="d-flex gray-background flex-column justify-content-center">
+        <div class="mx-auto col-md-12 col-md-8 text-center">
+            <h2 style="font-weight: 600">
+              Grow excitement in your relationships
+            </h2>
+            <p class="px-3">It only takes a few minutes to take that first step towards achieving your
+ relationship goals.</p>
+
+<a href="https://signup.html/" target="_blank" class="cta-link btn get-started-link my-2 mb-4">Download Beta</a>
+        </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+        <a id="nav-logo" class="navbar-brand js-scroll-trigger text-hide mb-4" href="/">MYLO</a>
+          </div>
+          <div class="col-lg-6 mx-auto row footer-box-links">
+          <div class="col-4 ">
+            <ul>
+              <li><strong></strong></li>
+              <li><a href="&#x2F;">Intro</a></li>
+              <li><a href="&#x2F;donate-spare-change">Problem</a></li>
+              <li><a href="&#x2F;about">Solution</a></li>
+              <li><a href="https:&#x2F;&#x2F;mylo.breezy.hr&#x2F;">Features</a></li>
+           
+            </ul>
+          </div>
+
+          <div class="col-4 ">
+            <ul>
+              <li><strong></strong></li>
+
+              <li><a href="&#x2F;fr">About</a></li>
+            </ul>  
+          </div>
+          <div class="col-4">
+            <ul>
+              <li><strong>Contact Us</strong></li>
+              <li><a href="/cdn-cgi/l/email-protection#592a2c2929362b2d1934203536773830"><span class="__cf_email__" data-cfemail="1665636666796462567b6f7a7938777f">[email&#160;protected]</span></a></li>            
+          </div>
+        </div>
+        </div>
+        <hr>
+<div class="row footer-last-row">
+  
+  <div class="col-lg-4 ml-auto text-center text-lg-left">
+    <p>© 2018 Woo Life Inc. All rights reserved.</p>
+  </div>
+
+  <div class="col-lg-4 ml-auto text-center">
+    <p>
+    Terms of Service | Privacy Policy 
+  </p>
+  </div>
+  <div class="col-lg-4 ml-auto text-center text-lg-right d-flex justify-content-center justify-content-lg-end">
+        <a  href="https://www.facebook.com/" target="_blank" alt="Facebook" class="mr-3" >
+        <h6 id="footer_social_facebook" class="text-hide footer-social-icon">
+        Facebook
+        </h6>
+      </a>
+        <a  href="https://twitter.com/" target="_blank" alt="Twitter" class="mr-3" >
+        <h6 id="footer_social_twitter" class="text-hide footer-social-icon">
+        Twitter
+        </h6>
+      </a>
+        <a  href="https://www.instagram.com/" target="_blank" alt="Instagram" class="mr-3" >
+        <h6 id="footer_social_instagram" class="text-hide footer-social-icon">
+        Instagram
+        </h6>
+      </a>
+  </div>
+</div>	
+    </section>
+    <!-- Bootstrap core JavaScript -->
+    <!-- <script src="/vendor/jquery/jquery.min.js"></script> -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script
+              src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1066878089999507');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1066878089999507&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - AdWords: 846594872 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-846594872"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'AW-846594872');
+</script>
+
+
+
+<script type="text/javascript">
+(function(b, r, a, n, c, h, _, s, d, k) {
+    if (!b[n] || !b[n]._q) {
+        for (; s < _.length;) c(h, _[s++]);
+        d = r.createElement(a);
+        d.async = 1;
+        d.src = "https://cdn.branch.io/branch-latest.min.js";
+        k = r.getElementsByTagName(a)[0];
+        k.parentNode.insertBefore(d, k);
+        b[n] = h
+    }
+})(window, document, "script", "branch", function(b, r) {
+        b[r] = function() {
+            b._q.push([r, arguments])
+        }
+    }, {
+        _q: [],
+        _v: 1
+    },
+    "addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent"
+    .split(" "), 0);
+
+function getMatchIDFromUrl(hashBased) {
+    var query;
+    if (hashBased) {
+        var pos = location.href.indexOf("?");
+        if (pos == -1) return [];
+        query = location.href.substr(pos + 1);
+    } else {
+        query = location.search.substr(1);
+    }
+    var result = {};
+    query.split("&").forEach(function(part) {
+        if (!part) return;
+        part = part.split("+").join(" "); // replace every + with space, regexp-free version
+        var eq = part.indexOf("=");
+        var key = eq > -1 ? part.substr(0, eq) : part;
+        var val = eq > -1 ? decodeURIComponent(part.substr(eq + 1)) : "";
+        var from = key.indexOf("[");
+        if (from == -1) result[decodeURIComponent(key)] = val;
+        else {
+            var to = key.indexOf("]", from);
+            var index = decodeURIComponent(key.substring(from + 1, to));
+            key = decodeURIComponent(key.substring(0, from));
+            if (!result[key]) result[key] = [];
+            if (!index) result[key].push(val);
+            else result[key][index] = val;
+        }
+    });
+    if (result['_branch_match_id']) {
+        return result['_branch_match_id'];
+    } else {
+        return false;
+    }
+}
+var options = { branch_match_id: getMatchIDFromUrl() };
+
+branch.init('key_live_ijCy377PFUyJi2VjHJBUaaenqxnN9CNJ', options, function(err, data) {
+
+console.log('Data passed', data);
+    delete data.data_parsed.$android_url;
+    delete data.data_parsed.$ios_url;
+
+    var linkData = {};
+
+    linkData.data = {
+        $web_only : false,
+        $desktop_url : "https://signup.woo.com"
+        };
+
+
+    if (data && data.data_parsed)
+    {
+
+        data.data_parsed['$web_only'] = false; //here if you want the link to be web only, aka not redirecting to App Stores
+        data.data_parsed['$desktop_url'] = "https://signup.woo.com"; //Put here the New Link
+
+        linkData = {
+        data : data.data_parsed,
+        campaign: data.data_parsed['~campaign'],
+        channel: data.data_parsed['~channel'],
+        feature: data.data_parsed['~feature'],
+        stage: data.data_parsed['~stage'],
+        tags: data.data_parsed['~tags'],
+        alias: data.data_parsed['~alias'],
+        af_sub1 : data.data_parsed['af_sub1'] ,
+        af_sub2 : data.data_parsed['af_sub2'],
+        identity : data.data_parsed['identity']
+        };
+
+        linkData.data['mylo_user_id'] = data.data_parsed['identity'] || null;
+
+    }
+
+console.log('linkData new', linkData)
+
+
+branch.link(linkData, function(err, link) {
+        console.error('ERROR ? ', err);
+        if (linkData && (linkData.af_sub1 || linkData.af_sub2))
+        {
+        link += '?'
+        }
+        if (linkData && linkData.af_sub1 && linkData.af_sub2)
+        {
+        link += 'af_sub1='+ linkData.af_sub1 + '&af_sub2='+linkData.af_sub2;
+        } else if (linkData && linkData.af_sub1) {
+        link += 'af_sub1='+ linkData.af_sub1
+        } else if (linkData && linkData.af_sub2) {
+        link += 'af_sub2='+ linkData.af_sub2
+        }
+
+        console.log('Link', link, 'from LinkData', linkData);
+        $('.cta-link').attr('target','_blank');
+        $('.cta-link').attr('href',link);   
+    });
+
+
+    
+});
+</script>
+<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> 
+
+<script>
+  window.intercomSettings = {
+    app_id: "uttdfrqt"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/uttdfrqt';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+</script>
+
+</body>
+</html>
