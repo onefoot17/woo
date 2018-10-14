@@ -8798,6 +8798,7 @@ h5 {
   line-height: normal;
   letter-spacing: normal;
   color: #8493a8;
+  justify-content: space-between;
 }
 
 #footer .footer-last-row:hover {
