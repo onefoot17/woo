@@ -8337,7 +8337,8 @@ img::-moz-selection {
     height: 78px;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    padding: 1rem 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   #mainNav.navbar-shrink {
     background-color: #212121;
