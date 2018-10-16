@@ -8249,7 +8249,7 @@ img::-moz-selection {
   font-family: 'Poppins';
 }
 
-#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {}
+/* #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {} */
 
 @media (max-width: 991.98px) {
   #mainNav .navbar-brand {
