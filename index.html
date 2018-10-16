@@ -171,11 +171,11 @@
                 <div class="my-4">
                   <h1 class="py-2 my-3">Win your boo's heart ‐ over and over again.</h1>
 
-                  <p class="mb-4 mt-lg-4 mb-lg-5" style="font-family:'Karla'; font-weight: 400; color:#">Woo helps you quickly plan breathtaking dates and outings, so you can nurture that special connection. Woo makes dating better.</p>
+                  <p class="mb-4 mt-lg-4 mb-lg-5" style="font-family:'Karla'; font-weight: 400;">Woo helps you quickly plan breathtaking dates and outings, so you can nurture that special connection. Woo makes dating better.</p>
                   
                   <div class="mt-lg-3">
                     <a href="#problem" class="js-scroll-trigger btn get-started-link my-2 mb-4">How can we help?</a>
-                    <span class="home-head-mobiles" style="color:#fff">
+                    <span class="home-head-mobiles" style="color:#ffffff">
                       Available on  <i class="fab fa-apple" style="padding-left: 5px; color:#30AEB8"></i> <i class="fab fa-android" style="padding-left: 2px; color:#5D58FC"> </i>
                     </span>
                   </div>
@@ -188,7 +188,7 @@
                   <img class="d-none d-md-block d-xl-none" src="img/head_video@2x.png" />
                   <img class="d-sm-block d-md-none pl-5" src="img/head_video@2x.png" />
                 </div>
-                  <a href="https://www.youtube.com/watch?v=GtRGUXippj0" alt="Play" class="position-absolute head-play-button">
+                <a href="https://www.youtube.com/watch?v=IBw6IlhDsYw" alt="Play" class="position-absolute head-play-button" data-media="<iframe width='560' height='315' src='https://www.youtube.com/embed/IBw6IlhDsYw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
                     <img src="img/play_icon@2x.png" />
                   </a>
                 </div>
@@ -246,7 +246,7 @@
           </div>
         </section>
 
-        <section id="solution" style=""  class="d-flex">
+        <section id="solution" class="d-flex">
           <div class="container my-auto">
             <div class="row">
               <div class="col-md-12 mx-auto text-center mb-5">
@@ -704,6 +704,19 @@
 
     <script>
       (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/uttdfrqt';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+    </script>
+
+    <script type="text/javascript">
+      var $body = $('body'),
+        $mastheadImgContainer = $('.masthead-img-container'),
+        $headPlayButton = $('.head-play-button');
+
+      $headPlayButton.click(function(event){
+        var media = $(this).attr('data-media');
+        $mastheadImgContainer.html(media);
+        $(this).css('display','none');
+        event.preventDefault();
+      });
     </script>
   </body>
 </html>
