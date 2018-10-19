@@ -8782,9 +8782,9 @@ h5 {
   color: #8493A8;
 }
 
-.security-img {
+/* .security-img {
   height: 55px;
-}
+} */
 
 #footer hr {
   border-color: #ECEFF4;
@@ -9898,4 +9898,17 @@ h5 {
 
 .coF{
   color: #ffffff;
+}
+
+#problem img,
+#solution img{
+  width: 100%;
+}
+
+#problem img{
+  max-width: 55px;
+}
+
+#solution img{
+  max-width: 125px;
 }
