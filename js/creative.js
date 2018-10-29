@@ -56,28 +56,21 @@
         distance: '0px'
     }, 300);
 
-    var activeClass = 'hfeb-active';
-    var $phoneImg = $('.phone-img-content');
-    var original_block = $(".home-for-everyone-block." + activeClass);
-    var original_image = original_block.attr('alt-img');
+    var activeClass = 'hfeb-active',
+        $phoneImg = $('.phone-img-content-img'),
+        $homeForEveryoneBlock = $(".home-for-everyone-block");
 
-    $('[alt-img]').each(function(){
-      $('<img/>')[0].src = $(this).attr('alt-img');
-    });
-
-    $(".home-for-everyone-block").hover(function() {
-        original_block.removeClass(activeClass)
+    $homeForEveryoneBlock.click(function(e) {
         var $this = $(this);
-        $phoneImg.css("background-image", "url('" + $this.attr('alt-img') + "')");
-    }, function() {
-        original_block.addClass(activeClass);
-        $phoneImg.css("background-image", "url('" + original_image + "')");
+        $homeForEveryoneBlock.removeClass(activeClass);
+        $this.addClass(activeClass);
+        $phoneImg.attr('src','img/' + $this.attr('alt-img'));
+        e.preventDefault();
     });
 
-
-    $('.rutg-accordion').collapse({
-        toggle: false
-    });
+    // $('.rutg-accordion').collapse({
+    //     toggle: false
+    // });
 
     $(".faq-sidebar-navigation ul li a").click(function(e) {
         e.preventDefault();
@@ -92,28 +85,28 @@
     });
 
     // Magnific popup calls
-    $('.head-play-button').magnificPopup({
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        disableOn: 0,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: true,
-        fixedContentPos: false,
-        iframe: {
-            patterns: {
-                youtube: {
-                    index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+    // $('.head-play-button').magnificPopup({
+    //     tLoading: 'Loading image #%curr%...',
+    //     mainClass: 'mfp-img-mobile',
+    //     disableOn: 0,
+    //     type: 'iframe',
+    //     mainClass: 'mfp-fade',
+    //     removalDelay: 160,
+    //     preloader: true,
+    //     fixedContentPos: false,
+    //     iframe: {
+    //         patterns: {
+    //             youtube: {
+    //                 index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
-                    id: 'v=', // String that splits URL in a two parts, second part should be %id%
-                    // Or null - full URL will be returned
-                    // Or a function that should return %id%, for example:
-                    // id: function(url) { return 'parsed id'; }
-                    src: 'https://www.youtube.com/embed/%id%?rel=0&autoplay=1' // URL that will be set as a source for iframe.
-                }
-            }
-        }
-    });
+    //                 id: 'v=', // String that splits URL in a two parts, second part should be %id%
+    //                 // Or null - full URL will be returned
+    //                 // Or a function that should return %id%, for example:
+    //                 // id: function(url) { return 'parsed id'; }
+    //                 src: 'https://www.youtube.com/embed/%id%?rel=0&autoplay=1' // URL that will be set as a source for iframe.
+    //             }
+    //         }
+    //     }
+    // });
 
 })(jQuery); // End of use strict

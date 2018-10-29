@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
     <title>Woo | Bringing Excitement to Relationships</title>
-    <link rel="icon" href="/img/mylogo_fav.png">
+    <!-- <link rel="icon" href="/img/mylogo_fav.png"> -->
+
     <!-- Open Graph data -->
     <!-- <meta property="fb:admins" content="Facebook numeric ID" /> -->
 
@@ -31,8 +32,8 @@
     <!-- <base href="//woo.com/"> -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -46,7 +47,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
 
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
@@ -59,6 +60,7 @@
     (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
     })(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-MS5CN94':true});
     </script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -175,23 +177,27 @@
 
             <p class="coF">Woo helps you quickly plan breathtaking dates and outings, so you can nurture that special connection.</p>
             
-            <div>
+            <div class="introWhy">
               <a href="#problem" class="js-scroll-trigger get-started-link">Why?</a>
 
-              <span class="home-head-mobiles coF">Available on  <i class="fab fa-apple" style="padding-left: 5px; color:#30AEB8"></i> <i class="fab fa-android" style="padding-left: 2px; color:#5D58FC"> </i></span>
+              <span class="home-head-mobiles coF">
+                <span>Available on</span>
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-android"> </i>
+              </span>
             </div>
           </div>
 
           <div class="col2">
-            <img class="introImg" src="img/head_video@2x.png" />
+            <div class="masthead-img-container"><img class="introImg" src="img/head_video@2x.png" /></div>
 
-            <div class="Center-Container is-Inline">
+            <a class="Center-Container is-Inline head-play-buttonCon" href="https://www.youtube.com/watch?v=IBw6IlhDsYw" alt="Play" data-media="<iframe width='560' height='315' src='https://www.youtube.com/embed/IBw6IlhDsYw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
               <div class="Center-Block">
-                <a href="https://www.youtube.com/watch?v=IBw6IlhDsYw" alt="Play" class="head-play-button" data-media="<iframe width='560' height='315' src='https://www.youtube.com/embed/IBw6IlhDsYw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
+                <div class="head-play-button">
                   <img src="img/play_icon@2x.png" />
-                </a>
+                </div>
               </div><!-- introImgCon -->
-            </div>
+            </a>
           </div>
         </div>
       </section><!-- intro -->
@@ -279,65 +285,63 @@
 
         <div class="cards">
           <div class="col1">
-            <div class="card home-for-everyone-block hfeb-left-1" alt-img="img/final.svg">
+            <a href="#" class="card home-for-everyone-block hfeb-left-1 hfeb-active" alt-img="feature-1.jpg">
               <div class="media-body">
                   <h5>Set the mood.</h5>
                   <p>Customize your options by choosing the type of date you want to plan.</p>
               </div>
 
-              <div class="icon-wrapper"></div>
-            </div>
+              <div class="icon-wrapper"><i class="fas fa-cogs"></i></div>
+            </a>
 
-            <div class="card home-for-everyone-block hfeb-left-2" alt-img="./img/home/affordable-phone/b-withdraw.png">
+            <a href="#" class="card home-for-everyone-block hfeb-left-2" alt-img="feature-2.jpg">
               <div class="media-body">
                   <h5>Browse ideas.</h5>
                   <p>Swipe through Woo Cards to find that perfect date idea that is ever so you‐two.</p>
               </div>
 
-              <div class="icon-wrapper"></div>
-            </div>
+              <div class="icon-wrapper"><i class="fas fa-directions"></i></div>
+            </a>
 
-            <div class="card home-for-everyone-block hfeb-left-3" alt-img="./img/home/affordable-phone/c-goal.png">
+            <a href="#" class="card home-for-everyone-block hfeb-left-3" alt-img="feature-3.jpg">
               <div class="media-body">
                   <h5>Up the ante.</h5>
                   <p>Once you’ve selected your Woo Card, enhance the experience by selecting related addons nearby.</p>
               </div>
 
-              <div class="icon-wrapper"></div>
-            </div>
+              <div class="icon-wrapper"><i class="fas fa-bullseye"></i></div>
+            </a>
           </div>
 
-          <div class="phone-img-background">
-            <div class="phone-img-content" style="background-image: url('img/home/affordable-phone/a-goal.png');"></div>
-          </div>
+          <div class="col2 phone-img-content"><img class="phone-img-content-img" src="img/feature-1.jpg" /></div>
 
           <div class="col3">
-            <div class="card home-for-everyone-block hfeb-right-1" alt-img="/img/home/affordable-phone/d-one-dollar.png">
-              <div class="icon-wrapper"></div>
+            <a href="#" class="card home-for-everyone-block hfeb-right-1" alt-img="feature-4.jpg">
+              <div class="icon-wrapper"><i class="fas fa-dollar-sign"></i></div>
 
               <div class="media-body">
                   <h5>Review the game plan.</h5>
                   <p>See where your experiences are in relation to each other on a map.</p>
               </div>
-            </div>
+            </a>
 
-            <div class="card home-for-everyone-block hfeb-right-2" alt-img="/img/home/affordable-phone/e-portfolio.png">
-              <div class="icon-wrapper"></div>
+            <a href="#" class="card home-for-everyone-block hfeb-right-2" alt-img="feature-5.jpg">
+              <div class="icon-wrapper"><i class="fas fa-bolt"></i></div>
 
               <div class="media-body">
                   <h5>Woo Tips.</h5>
                   <p>Put the finishing touches on your date with tips to make the experience extra special.</p>
               </div>
-            </div>
+            </a>
 
-            <div class="card home-for-everyone-block hfeb-right-3" alt-img="/img/home/affordable-phone/f-accellerate-savings.png">
-              <div class="icon-wrapper"></div>
+            <a href="#" class="card home-for-everyone-block hfeb-right-3" alt-img="feature-6.jpg">
+              <div class="icon-wrapper"><i class="fas fa-fighter-jet"></i></div>
 
               <div class="media-body">
                   <h5>Repeat.</h5>
                   <p>Keep the fire burning.</p>
               </div>
-            </div>
+            </a>
           </div>
         </div><!-- cards -->
       </div>
@@ -443,7 +447,7 @@
               <!-- <a href="https://signup.html/" target="_blank" class="cta-link btn get-started-link my-2 mb-4">Sign up for Beta</a> -->
 
               <!-- www.123formbuilder.com script begins here -->
-              <script type="text/javascript" defer src="https://www.123formbuilder.com/embed/4330247.js" data-role="form" data-default-width="650px"></script>
+              <!-- <script type="text/javascript" defer src="https://www.123formbuilder.com/embed/4330247.js" data-role="form" data-default-width="650px"></script> -->
               <!-- www.123formbuilder.com script ends here -->
             </div>
           </div>
@@ -466,11 +470,12 @@
 
     <!-- Bootstrap core JavaScript -->
     <!-- <script src="/vendor/jquery/jquery.min.js"></script> -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+    <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap-js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -532,79 +537,79 @@
         "addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent"
         .split(" "), 0);
 
-    function getMatchIDFromUrl(hashBased) {
-        var query;
-        if (hashBased) {
-            var pos = location.href.indexOf("?");
-            if (pos == -1) return [];
-            query = location.href.substr(pos + 1);
-        } else {
-            query = location.search.substr(1);
-        }
-        var result = {};
-        query.split("&").forEach(function(part) {
-            if (!part) return;
-            part = part.split("+").join(" "); // replace every + with space, regexp-free version
-            var eq = part.indexOf("=");
-            var key = eq > -1 ? part.substr(0, eq) : part;
-            var val = eq > -1 ? decodeURIComponent(part.substr(eq + 1)) : "";
-            var from = key.indexOf("[");
-            if (from == -1) result[decodeURIComponent(key)] = val;
-            else {
-                var to = key.indexOf("]", from);
-                var index = decodeURIComponent(key.substring(from + 1, to));
-                key = decodeURIComponent(key.substring(0, from));
-                if (!result[key]) result[key] = [];
-                if (!index) result[key].push(val);
-                else result[key][index] = val;
-            }
-        });
-        if (result['_branch_match_id']) {
-            return result['_branch_match_id'];
-        } else {
-            return false;
-        }
-    }
-    var options = { branch_match_id: getMatchIDFromUrl() };
+      function getMatchIDFromUrl(hashBased) {
+          var query;
+          if (hashBased) {
+              var pos = location.href.indexOf("?");
+              if (pos == -1) return [];
+              query = location.href.substr(pos + 1);
+          } else {
+              query = location.search.substr(1);
+          }
+          var result = {};
+          query.split("&").forEach(function(part) {
+              if (!part) return;
+              part = part.split("+").join(" "); // replace every + with space, regexp-free version
+              var eq = part.indexOf("=");
+              var key = eq > -1 ? part.substr(0, eq) : part;
+              var val = eq > -1 ? decodeURIComponent(part.substr(eq + 1)) : "";
+              var from = key.indexOf("[");
+              if (from == -1) result[decodeURIComponent(key)] = val;
+              else {
+                  var to = key.indexOf("]", from);
+                  var index = decodeURIComponent(key.substring(from + 1, to));
+                  key = decodeURIComponent(key.substring(0, from));
+                  if (!result[key]) result[key] = [];
+                  if (!index) result[key].push(val);
+                  else result[key][index] = val;
+              }
+          });
+          if (result['_branch_match_id']) {
+              return result['_branch_match_id'];
+          } else {
+              return false;
+          }
+      }
+      var options = { branch_match_id: getMatchIDFromUrl() };
 
-    branch.init('key_live_ijCy377PFUyJi2VjHJBUaaenqxnN9CNJ', options, function(err, data) {
+      branch.init('key_live_ijCy377PFUyJi2VjHJBUaaenqxnN9CNJ', options, function(err, data) {
 
-    console.log('Data passed', data);
+      console.log('Data passed', data);
 
-    delete data.data_parsed.$android_url;
-    delete data.data_parsed.$ios_url;
+      delete data.data_parsed.$android_url;
+      delete data.data_parsed.$ios_url;
 
-    var linkData = {};
+      var linkData = {};
 
-    linkData.data = {
-      $web_only : false,
-      $desktop_url : "https://signup.woo.com"
-    };
+      linkData.data = {
+        $web_only : false,
+        $desktop_url : "https://signup.woo.com"
+      };
 
-    if (data && data.data_parsed){
-        data.data_parsed['$web_only'] = false; //here if you want the link to be web only, aka not redirecting to App Stores
-        data.data_parsed['$desktop_url'] = "https://signup.woo.com"; //Put here the New Link
+      if (data && data.data_parsed){
+          data.data_parsed['$web_only'] = false; //here if you want the link to be web only, aka not redirecting to App Stores
+          data.data_parsed['$desktop_url'] = "https://signup.woo.com"; //Put here the New Link
 
-        linkData = {
-          data : data.data_parsed,
-          campaign: data.data_parsed['~campaign'],
-          channel: data.data_parsed['~channel'],
-          feature: data.data_parsed['~feature'],
-          stage: data.data_parsed['~stage'],
-          tags: data.data_parsed['~tags'],
-          alias: data.data_parsed['~alias'],
-          af_sub1 : data.data_parsed['af_sub1'] ,
-          af_sub2 : data.data_parsed['af_sub2'],
-          identity : data.data_parsed['identity']
-        };
+          linkData = {
+            data : data.data_parsed,
+            campaign: data.data_parsed['~campaign'],
+            channel: data.data_parsed['~channel'],
+            feature: data.data_parsed['~feature'],
+            stage: data.data_parsed['~stage'],
+            tags: data.data_parsed['~tags'],
+            alias: data.data_parsed['~alias'],
+            af_sub1 : data.data_parsed['af_sub1'] ,
+            af_sub2 : data.data_parsed['af_sub2'],
+            identity : data.data_parsed['identity']
+          };
 
-        linkData.data['mylo_user_id'] = data.data_parsed['identity'] || null;
-    }
+          linkData.data['mylo_user_id'] = data.data_parsed['identity'] || null;
+      }
 
-    console.log('linkData new', linkData);
+      // console.log('linkData new', linkData);
 
       branch.link(linkData, function(err, link) {
-          console.error('ERROR ? ', err);
+          // console.error('ERROR ? ', err);
 
           if (linkData && (linkData.af_sub1 || linkData.af_sub2)){
             link += '?'
@@ -642,9 +647,9 @@
     <script type="text/javascript">
       var $body = $('body'),
         $mastheadImgContainer = $('.masthead-img-container'),
-        $headPlayButton = $('.head-play-button');
+        $headPlayButtonCon = $('.head-play-buttonCon');
 
-      $headPlayButton.click(function(event){
+      $headPlayButtonCon.click(function(event){
         var media = $(this).attr('data-media');
         $mastheadImgContainer.html(media);
         $(this).css('display','none');
