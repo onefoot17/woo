@@ -56,14 +56,26 @@
         distance: '0px'
     }, 300);
 
-    var activeClass = 'hfeb-active',
-        $phoneImg = $('.phone-img-content-img'),
-        $homeForEveryoneBlock = $(".home-for-everyone-block");
+    // Navigation
+    var $navLink = $('.nav-link'),
+        $navLinkActive = ('nav-link-active');
 
-    $homeForEveryoneBlock.click(function(e) {
+    $navLink.click(function(e) {
         var $this = $(this);
-        $homeForEveryoneBlock.removeClass(activeClass);
-        $this.addClass(activeClass);
+        $navLink.removeClass($navLinkActive);
+        $this.addClass($navLinkActive);
+        e.preventDefault();
+    });
+
+    // Features
+    var $hfeb = $('.home-for-everyone-block'),
+        $hfebActive = 'hfeb-active',
+        $phoneImg = $('.phone-img-content-img');
+
+    $hfeb.click(function(e) {
+        var $this = $(this);
+        $hfeb.removeClass($hfebActive);
+        $this.addClass($hfebActive);
         $phoneImg.attr('src','img/' + $this.attr('alt-img'));
         e.preventDefault();
     });
@@ -72,17 +84,17 @@
     //     toggle: false
     // });
 
-    $(".faq-sidebar-navigation ul li a").click(function(e) {
-        e.preventDefault();
-        var activeFaq = $(".faq-sidebar-navigation ul li.active a");
-        var id = activeFaq.attr('href');
-        var dest = $(this).attr('href');
-        activeFaq.parent().removeClass('active');
-        $(this).parent().addClass('active');
-        $(id).removeClass('active');
-        $(dest).addClass('active');
-        return false;
-    });
+    // $(".faq-sidebar-navigation ul li a").click(function(e) {
+    //     e.preventDefault();
+    //     var activeFaq = $(".faq-sidebar-navigation ul li.active a");
+    //     var id = activeFaq.attr('href');
+    //     var dest = $(this).attr('href');
+    //     activeFaq.parent().removeClass('active');
+    //     $(this).parent().addClass('active');
+    //     $(id).removeClass('active');
+    //     $(dest).addClass('active');
+    //     return false;
+    // });
 
     // Magnific popup calls
     // $('.head-play-button').magnificPopup({
