@@ -195,25 +195,16 @@ img {
 .navbar-nav {
   display: flex;
   align-items: center;
-  flex-direction: row;
   padding-left: 100px;
   margin-bottom: 0;
   list-style: none;
 }
 
-.nav-item:last-child{
-  padding-left: 1rem;
-}
-
-.nav-link,
-.nav-link:focus {
-  border-top: transparent solid 5px;
+.nav-link{
   border-bottom: transparent solid 5px;
   color: #212121;
   font-weight: 400;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-bottom: .5rem;
+  padding: .5rem 1rem;
   text-decoration: none;
 }
 
@@ -232,141 +223,6 @@ img {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
-  align-items: center;
-}
-
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-
-.navbar-toggler:hover,
-.navbar-toggler:focus {
-  text-decoration: none;
-}
-
-.navbar-toggler:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
-}
-
-.navbar-expand {
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
-
-.navbar-expand > .container,
-.navbar-expand > .container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.navbar-expand .navbar-nav {
-  flex-direction: row;
-}
-
-.navbar-expand .navbar-nav .dropdown-menu {
-  position: absolute;
-}
-
-.navbar-expand .navbar-nav .dropdown-menu-right {
-  right: 0;
-  left: auto;
-}
-
-.navbar-expand > .container,
-.navbar-expand > .container-fluid {
-  flex-wrap: nowrap;
-}
-
-.navbar-expand .navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
-}
-
-.navbar-expand .navbar-toggler {
-  display: none;
-}
-
-.navbar-expand .dropup .dropdown-menu {
-  top: auto;
-  bottom: 100%;
-}
-
-.navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.navbar-light .navbar-text a {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-light .navbar-text a:hover,
-.navbar-light .navbar-text a:focus {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-expand-lg {
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
-
-.navbar-expand-lg .navbar-nav {
-  flex-direction: row;
-}
-
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-  position: absolute;
-}
-
-.navbar-expand-lg .navbar-nav .dropdown-menu-right {
-  right: 0;
-  left: auto;
-}
-
-.navbar-expand-lg .navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
-}
-
-.navbar-expand-lg .navbar-toggler {
-  display: none;
-}
-
-.navbar-expand-lg .dropup .dropdown-menu {
-  top: auto;
-  bottom: 100%;
-}
-
-#mainNav .navbar-toggler {
-  border: none !important;
 }
 
 #nav-logo,
@@ -593,6 +449,11 @@ img {
   padding: .5rem 1rem;
 }
 
+.navbar .get-started-link{
+  border-bottom: transparent solid 5px;
+  margin-left: 1rem;
+}
+
 .get-started-link:hover {
   background: #00ced1; /* Old browsers */
   color:#fff;
@@ -795,28 +656,25 @@ img {
   padding-right: 0;
 } */
 
-.text-justify {
-  text-align: justify !important;
+@media (max-width: 640px){
+  .container,
+  .cards{
+    flex-direction: column;
+  }
+
+  .navbar{
+  }
+
+  .navbar-nav{
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .masthead .container{
+    padding-top: 180px;
+  }
 }
 
-.text-nowrap {
-  white-space: nowrap !important;
-}
+@media (max-width: 320px){
 
-.text-truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.text-left {
-  text-align: left !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-center {
-  text-align: center !important;
 }
