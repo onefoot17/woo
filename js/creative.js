@@ -68,7 +68,7 @@
     });
 
     // Features
-    var $hfeb = $('.home-for-everyone-block'),
+    var $hfeb = $('.hfeb'),
         $hfebActive = 'hfeb-active',
         $phoneImg = $('.phone-img-content-img');
 
