@@ -67,18 +67,147 @@
         e.preventDefault();
     });
 
+    // Intro video
+    var $body = $('body'),
+        $mastheadImgContainer = $('.masthead-img-container'),
+        $headPlayButtonCon = $('.head-play-buttonCon');
+
+    $headPlayButtonCon.click(function(event){
+        var media = $(this).attr('data-media');
+
+        $mastheadImgContainer.html(media);
+
+        $(this).css('display','none');
+        event.preventDefault();
+    });
+
     // Features
-    var $hfeb = $('.hfeb'),
-        $hfebActive = 'hfeb-active',
+    var $feature = $('.feature'),
+        $featureActive = 'feature-active',
         $phoneImg = $('.phone-img-content-img');
 
-    $hfeb.click(function(e) {
+    $feature.click(function(e) {
         var $this = $(this);
-        $hfeb.removeClass($hfebActive);
-        $this.addClass($hfebActive);
+        $feature.removeClass($featureActive);
+        $this.addClass($featureActive);
         $phoneImg.attr('src','img/' + $this.attr('alt-img'));
         e.preventDefault();
     });
+
+    // Overlay
+    // Navigation
+    var $GG__nav = $('.GG__nav'),
+        $GG__navDesktop = $('.GG__nav--desktop'),
+        $GG__navMobileButtonOpen = $('.GG__nav--mobileButtonOpen'),
+        $GG__navMobileButtonClose = $('.GG__nav--mobileButtonClose'),
+        $GG__navMobile = $('.GG__nav--mobile'),
+        $GG__navMobileDropdown = $('.GG__nav--mobileDropdown');
+
+    $GG__navMobileButtonOpen.on('click',function(event){
+        $GG__navMobileDropdown.toggleClass('GG__nav--mobileDropdown--show');
+
+        event.preventDefault();
+    });
+
+    $GG__navMobileButtonClose.on('click',function(event){
+        $GG__navMobileDropdown.toggleClass('GG__nav--mobileDropdown--show');
+
+        event.preventDefault();
+    });
+    // end Navigation
+
+    // Smooth Scrolling
+    // $('a[href*="#"]:not([href="#"])').click(function(){
+    //     if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'') && location.hostname==this.hostname){
+    //         var target = $(this.hash),
+    //             $GG__rslidesNavHeight = $('.GG__rslidesNav').height();
+
+    //         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+    //         if(target.length){
+    //             if($(this).hasClass('events')){
+    //                 $('html,body').animate({
+    //                     scrollTop: target.offset().top - $GG__rslidesNavHeight
+    //                 },1000);
+    //             }else{
+    //                 $('html,body').animate({
+    //                     scrollTop: target.offset().top
+    //                 },1000);
+    //             }
+
+    //             // pageTracker();
+                
+    //             return false;
+    //         }
+    //     }
+    // });
+    // end Smooth Scrolling
+
+    // Overlay
+    var $body = $('body'),
+        $WO__overlayLink = $('.WO__overlayLink'),
+        $WO__overlay = $('.WO__overlay'),
+        $WO__overlayMedia = $('.WO__overlayMedia'),
+        $WO__overlayClose = $('.WO__overlayClose');
+
+    $WO__overlayLink.click(function(event){
+        // var media = $(this).attr('data-media');
+
+        // $WO__overlayMedia.html(media);
+        
+        $body.addClass('ovHi');
+
+        $WO__overlay.addClass('WO__overlay--show');
+
+        event.preventDefault();
+    });
+
+    $WO__overlayClose.click(function(event){
+        // $('.WO__overlayMedia').html('');
+
+        $body.removeClass('ovHi');
+
+        $WO__overlay.removeClass('WO__overlay--show');
+
+        event.preventDefault();
+    });
+
+    $WO__overlay.click(function(event){$WO__overlayClose.trigger('click');});
+
+    $(document).keyup(function(event){
+        if(event.keyCode==27){$WO__overlayClose.trigger('click');}
+    });
+    // end Overlay
+
+    //Video Resize
+    // function $TG__videosResize(){
+    //     var $allVideos = $('iframe[src^="//player.vimeo.com"], iframe[src^="https://www.youtube.com"], object, embed');
+
+    //     $allVideos.each(function(){
+    //         $(this)
+    //         // jQuery .data does not work on object/embed elements
+    //         .attr('data-aspectRatio', this.height / this.width)
+    //         .removeAttr('height')
+    //         .removeAttr('width');
+    //     });
+
+    //     $(window).resize(function(){//console.log('resizing');
+    //         var newWidth = $WO__overlayMedia.width();
+
+    //         $allVideos.each(function(){
+    //             var $el = $(this);
+
+    //             $el
+    //                 .width(newWidth)
+    //                 .height(newWidth * $el.attr('data-aspectRatio'));
+    //         });
+    //     }).resize();
+    // }
+
+
+
+
+
 
     // $('.rutg-accordion').collapse({
     //     toggle: false
