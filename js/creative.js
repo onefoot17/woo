@@ -96,7 +96,7 @@
 
     // Overlay
     // Navigation
-    var $GG__nav = $('.GG__nav'),
+    /*var $GG__nav = $('.GG__nav'),
         $GG__navDesktop = $('.GG__nav--desktop'),
         $GG__navMobileButtonOpen = $('.GG__nav--mobileButtonOpen'),
         $GG__navMobileButtonClose = $('.GG__nav--mobileButtonClose'),
@@ -113,7 +113,22 @@
         $GG__navMobileDropdown.toggleClass('GG__nav--mobileDropdown--show');
 
         event.preventDefault();
+    });*/
+
+    // Navigation resize
+    var $window = $(window),
+        $WO__main = $('#WO__main'),
+        $WO__navbar = $('.navbar'),
+        $WO__navbarHeight = $WO__navbar.outerHeight();
+
+    $WO__main.css('padding-top', $WO__navbarHeight);
+
+    $window.resize(function(){
+        var $WO__navbarHeight = $WO__navbar.outerHeight();
+
+        $WO__main.css('padding-top', $WO__navbarHeight);
     });
+    // end Navigation resize
     // end Navigation
 
     // Smooth Scrolling
@@ -172,11 +187,13 @@
         event.preventDefault();
     });
 
-    $WO__overlay.click(function(event){$WO__overlayClose.trigger('click');});
+    /*$WO__overlay.click(function(event){
+        $WO__overlayClose.trigger('click');
+    });
 
     $(document).keyup(function(event){
         if(event.keyCode==27){$WO__overlayClose.trigger('click');}
-    });
+    });*/
     // end Overlay
 
     //Video Resize
