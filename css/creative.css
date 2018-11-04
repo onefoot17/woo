@@ -856,3 +856,13 @@ img {
     order: 1;
   }
 }
+
+@media only screen{
+  .navbar{
+    position: static;
+  }
+
+  #WO__main{
+    padding-top: 0 !important;
+  }
+}
