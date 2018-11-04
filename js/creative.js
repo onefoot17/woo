@@ -69,13 +69,13 @@
 
     // Intro video
     var $body = $('body'),
-        $mastheadImgContainer = $('.masthead-img-container'),
+        $introImgCon = $('.introImgCon'),
         $headPlayButtonCon = $('.head-play-buttonCon');
 
     $headPlayButtonCon.click(function(event){
         var media = $(this).attr('data-media');
 
-        $mastheadImgContainer.html(media);
+        $introImgCon.html(media);
 
         $(this).css('display','none');
         event.preventDefault();
