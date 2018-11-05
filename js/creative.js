@@ -26,6 +26,19 @@
       offset: 77
     });*/
 
+    // Collapse Navbar	
+    var navbarCollapse = function() {
+        if ($(".navbar").offset().top > 20) {
+            $(".navbar").addClass("navbar-shrink");
+        } else {
+            $(".navbar").removeClass("navbar-shrink");
+        }
+    };
+    // Collapse now if page is not at top
+    navbarCollapse();
+    // Collapse the navbar when page is scrolled
+    $(window).scroll(navbarCollapse);
+
     // Scroll reveal calls
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
