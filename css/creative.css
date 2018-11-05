@@ -3,6 +3,7 @@
   --white: #ffffff;
   --white09: rgba(255, 255, 255, .9);
   --coral: #f08080;
+  --coral08: rgba(240, 128, 128, .8);
   --coral03: rgba(240, 128, 128, .3);
   --teal: #00ced1;
   --teal03: rgba(0, 206, 209, .3);
@@ -118,6 +119,7 @@ h4 {
 h5 {
   color: var(--gray-dark);
   font-size: 1rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
@@ -128,7 +130,7 @@ h6{
 }
 
 p{
-  font-size: .8rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -217,7 +219,7 @@ img {
 .nav-link-active {
   border-bottom: transparent solid 5px;
   color: var(--gray-dark);
-  font-weight: 400;
+  font-size: .8rem;
   margin-top: .5rem;
   margin-bottom: .5rem;
   padding: .5rem 1rem;
@@ -407,6 +409,14 @@ img {
 
 .introImg {
   width: 100%;
+}
+
+.introImgCaption{
+  background-color: var(--coral08);
+  border-radius: 4px;
+  box-shadow: 0 0px 17px 0 var(--gray-dark01);
+  color: var(--white);
+  padding: .5rem;
 }
 
 .head-play-button {
