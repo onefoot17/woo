@@ -186,12 +186,14 @@
           <div class="col2">
             <div class="introImgCon"><img class="introImg" src="img/intro.jpg" /></div><!-- introImgCon -->
 
-            <div class="Center-Container is-Inline">
+            <p class="introImgCaption">Tiffany Falls Conversation, Hamilton, On</p>
+
+            <!-- <div class="Center-Container is-Inline">
               <div class="Center-Block">
                   <p class="introImgCaption">Tiffany Falls Conversation<br />
                   Hamilton, On</p>
               </div>
-            </div>
+            </div> -->
 
             <!-- <a class="Center-Container is-Inline head-play-buttonCon" href="https://www.youtube.com/watch?v=IBw6IlhDsYw" alt="Play" data-media="<iframe width='560' height='315' src='https://www.youtube.com/embed/IBw6IlhDsYw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
               <div class="Center-Block">
@@ -267,15 +269,15 @@
       </section><!-- solution -->
           
       <section id="features" class="gray-background">
-        <div class="container">
+        <div class="container features-desktop">
           <h2 class="coF">How does Woo work for you?</h2>
 
           <div class="cards">
             <div class="col1">
               <a href="#" class="card feature feature-left-1 feature-active" alt-img="feature-1.jpg">
                 <div class="featureBody">
-                    <h5>Set the mood.</h5>
-                    <p>Customize your options by choosing the type of date you  want to plan.</p>
+                  <h5>Set the mood.</h5>
+                  <p>Customize your options by choosing the type of date you  want to plan.</p>
                 </div>
 
                 <div class="icon-wrapper">1</div>
@@ -283,8 +285,8 @@
 
               <a href="#" class="card feature feature-left-2" alt-img="feature-2.jpg">
                 <div class="featureBody">
-                    <h5>Browse ideas.</h5>
-                    <p>Swipe through Woo Cards to find that perfect date idea that is ever so you‐two.</p>
+                  <h5>Browse ideas.</h5>
+                  <p>Swipe through Woo Cards to find that perfect date idea that is ever so you‐two.</p>
                 </div>
 
                 <div class="icon-wrapper">2</div>
@@ -292,8 +294,8 @@
 
               <a href="#" class="card feature feature-left-3" alt-img="feature-3.jpg">
                 <div class="featureBody">
-                    <h5>Up the ante.</h5>
-                    <p>Once you’ve selected your Woo Card, enhance the experience by selecting related addons nearby.</p>
+                  <h5>Up the ante.</h5>
+                  <p>Once you’ve selected your Woo Card, enhance the experience by selecting related addons nearby.</p>
                 </div>
 
                 <div class="icon-wrapper">3</div>
@@ -307,8 +309,8 @@
                 <div class="icon-wrapper">4</div>
 
                 <div class="featureBody">
-                    <h5>Review the game plan.</h5>
-                    <p>See where your experiences are in relation to each other on a map.</p>
+                  <h5>Review the game plan.</h5>
+                  <p>See where your experiences are in relation to each other on a map.</p>
                 </div>
               </a>
 
@@ -316,8 +318,8 @@
                 <div class="icon-wrapper">5</div>
 
                 <div class="featureBody">
-                    <h5>Woo Tips.</h5>
-                    <p>Put the finishing touches on your date with tips to make the experience extra special.</p>
+                  <h5>Woo Tips.</h5>
+                  <p>Put the finishing touches on your date with tips to make the experience extra special.</p>
                 </div>
               </a>
 
@@ -325,12 +327,68 @@
                 <div class="icon-wrapper">6</div>
 
                 <div class="featureBody">
-                    <h5>Repeat.</h5>
-                    <p>Keep the fire burning.</p>
+                  <h5>Repeat.</h5>
+                  <p>Keep the fire burning.</p>
                 </div>
               </a>
             </div>
           </div><!-- cards -->
+        </div>
+
+        <div class="container features-mobile">
+          <h2 class="coF">How does Woo work for you?</h2>
+
+          <ul class="WO__rslides_tabs"></ul>
+
+          <ul class="rslides" id="featuresSlides">
+              <li class="feature-1">
+                <h5>Set the mood.</h5>
+
+                <p>Customize your options by choosing the type of date you  want to plan.</p>
+
+                <a href="#"><img src="img/feature-1.jpg" alt="" /></a>
+              </li>
+
+              <li class="feature-2">
+                <h5>Browse ideas.</h5>
+                
+                <p>Swipe through Woo Cards to find that perfect date idea that is ever so you‐two.</p>
+                
+                <a href="#"><img src="img/feature-2.jpg" alt="" /></a>
+              </li>
+
+              <li class="feature-3">
+                <h5>Up the ante.</h5>
+
+                <p>Once you’ve selected your Woo Card, enhance the experience by selecting related addons nearby.</p>
+                
+                <a href="#"><img src="img/feature-3.jpg" alt="" /></a>
+              </li>
+
+              <li class="feature-4">
+                <h5>Review the game plan.</h5>
+
+                <p>See where your experiences are in relation to each other on a map.</p>
+                
+                <a href="#"><img src="img/feature-4.jpg" alt="" /></a>
+              </li>
+
+              <li class="feature-5">
+                <h5>Woo Tips.</h5>
+                
+                <p>Put the finishing touches on your date with tips to make the experience extra special.</p>
+                
+                <a href="#"><img src="img/feature-5.jpg" alt="" /></a>
+              </li>
+
+              <li class="feature-6">
+                <h5>Repeat.</h5>
+                
+                <p>Keep the fire burning.</p>
+                
+                <a href="#"><img src="img/feature-6.jpg" alt="" /></a>
+              </li>
+            </ul>
         </div>
       </section><!-- features -->
 
@@ -606,13 +664,15 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <script src="vendor/bootstrap-js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/bootstrap-js/bootstrap.bundle.min.js"></script> -->
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+
+    <script src="js/responsiveslides.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.js"></script>

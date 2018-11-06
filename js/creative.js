@@ -160,6 +160,18 @@
         e.preventDefault();
     });
 
+    // Features slides on mobile
+    $("#featuresSlides").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540,
+        manualControls: "",
+        navContainer: ".WO__rslides_tabs"
+    });
+    // end Features slides on mobile
+    // end Features
+
     // Overlay
     var $body = $('body'),
         $WO__overlayLink = $('.WO__overlayLink'),
