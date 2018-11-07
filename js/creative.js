@@ -50,19 +50,17 @@
     });
     // end Add active class to nav items on scroll
 
-    // Add active class to logo on scroll
-    var navbarCollapse = function() {
+    // Shrink navbar on scroll
+    var navbarShrink = function() {
         if ($(".navbar").offset().top > 20) {
             $(".navbar").addClass("navbar-shrink");
         } else {
             $(".navbar").removeClass("navbar-shrink");
         }
     };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
-    // end active class to logo on scroll
+    navbarShrink();
+    $(window).scroll(navbarShrink);
+    // end Shrink navbar
     // end Add active class to nav items
 
     // Nav mobile
@@ -106,23 +104,9 @@
                 }
             });
 
-            // $('html, body').animate({
-            //     scrollTop: ($(hash).offset().top)
-            // }, {
-            //     start: function(){
-            //         $(hash).css('padding-top', $WO__navbarHeight);
-            //     }
-            // }, 1000, 'easeInOutExpo', function(){});
-                
-            // $('html, body').animate({
-            //     scrollTop: ($(hash).offset().top - $WO__navbarHeight)
-            // }, 1000, "easeInOutExpo", function(){
-            //     // $WO__main.css('padding-top', $WO__navbarHeight);
-            //     // Add hash (#) to URL when done scrolling (default click behavior)
-            //     // window.location.hash = hash;
-            // });
-            
-            
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+                        
             e.preventDefault();
         }
     });
@@ -145,7 +129,7 @@
         auto: false,
         pager: true,
         speed: 300,
-        maxwidth: 540,
+        // maxwidth: 540,
         manualControls: "",
         navContainer: ".WO__rslides_tabs"
     });
