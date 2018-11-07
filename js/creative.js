@@ -92,7 +92,6 @@
         if (this.hash !== "") {
             var hash = this.hash,
                 $WO__navbarHeight = $WO__navbar.outerHeight();
-            console.log(hash);
 
             $('html, body').animate({
                 scrollTop: ($(hash).offset().top)
@@ -110,6 +109,27 @@
             e.preventDefault();
         }
     });
+
+    // Scroll page to hash on load
+    setTimeout(function() {
+        var $hash = window.location.hash;
+        if ($hash) {
+            window.scrollTo(0, 0);
+            var $target = $hash.split('#')[1],
+                $WO__navbarHeight = $WO__navbar.outerHeight();
+
+            $('html, body').animate({
+                scrollTop: ($('#' + $target).offset().top)
+            }, {
+                duration: 1000,
+                easing: 'easeInOutExpo',
+                start: function(){
+                    $('#'+$target).css('padding-top', $WO__navbarHeight);
+                }
+            });
+        }
+    }, 1);
+    // end Scroll page to hash on load
 
     // Features
     var $feature = $('.feature'),
