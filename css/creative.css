@@ -964,6 +964,11 @@ img {
     margin-bottom: 1rem;
   }
 
+  #challenge .card h5,
+  #solution .card h5{
+    align-self: flex-start;
+  }
+
   .features-desktop{
     display: none;
   }
